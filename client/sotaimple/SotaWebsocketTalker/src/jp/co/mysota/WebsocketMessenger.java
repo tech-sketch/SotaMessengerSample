@@ -25,21 +25,20 @@ public class WebsocketMessenger extends Endpoint
 	public String URL;
 	public RecogResult recogresult;
 	public Session session;
-	private Properties prop = new Properties();
-	public WebsocketMessenger()																								//@<BlockInfo>jp.vstone.block.func.constructor,16,16,432,16,False,4,@</BlockInfo>
+	public WebsocketMessenger()																							//@<BlockInfo>jp.vstone.block.func.constructor,16,16,432,16,False,4,@</BlockInfo>
 	{
 																														//@<OutputChild>
-		URL="";																				//@<BlockInfo>jp.vstone.block.variable,80,16,80,16,False,3,break@</BlockInfo>
+		URL="";																											//@<BlockInfo>jp.vstone.block.variable,80,16,80,16,False,3,break@</BlockInfo>
 																														//@<EndOfBlock/>
 		/*RecogResult recogresult*/;																					//@<BlockInfo>jp.vstone.block.variable,160,16,160,16,False,2,break@</BlockInfo>
 																														//@<EndOfBlock/>
 		session=null;																									//@<BlockInfo>jp.vstone.block.variable,272,16,272,16,False,1,break@</BlockInfo>
 																														//@<EndOfBlock/>
 																														//@</OutputChild>
-    }																													//@<EndOfBlock/>
+	}																													//@<EndOfBlock/>
 
 	//@<Separate/>
-	public void connect(String URL)																								//@<BlockInfo>jp.vstone.block.func,560,400,864,400,False,12,@</BlockInfo>
+	public void connect(String URL)																						//@<BlockInfo>jp.vstone.block.func,560,400,864,400,False,12,@</BlockInfo>
 	throws SpeechRecogAbortException {
 		if(!GlobalVariable.TRUE) throw new SpeechRecogAbortException("default");
 
@@ -63,8 +62,8 @@ public class WebsocketMessenger extends Endpoint
 	}																													//@<EndOfBlock/>
 
 	//@<Separate/>
-	public void onOpen(Session session,EndpointConfig eptCfg)															//@<BlockInfo>jp.vstone.block.func,432,288,768,288,False,17,@</BlockInfo>
-	 {
+	public void onOpen(Session session,EndpointConfig eptCfg) {															//@<BlockInfo>jp.vstone.block.func,432,288,768,288,False,17,@</BlockInfo>
+	//throws SpeechRecogAbortException {
 		//if(!GlobalVariable.TRUE) throw new SpeechRecogAbortException("default");
 
 																														//@<OutputChild>
@@ -86,7 +85,7 @@ public class WebsocketMessenger extends Endpoint
 	}																													//@<EndOfBlock/>
 
 	//@<Separate/>
-	public void sendMessage(String message)																							//@<BlockInfo>jp.vstone.block.func,48,288,240,288,False,19,@</BlockInfo>
+	public void sendMessage(String message)																				//@<BlockInfo>jp.vstone.block.func,48,288,240,288,False,19,@</BlockInfo>
 	throws SpeechRecogAbortException {
 		if(!GlobalVariable.TRUE) throw new SpeechRecogAbortException("default");
 
