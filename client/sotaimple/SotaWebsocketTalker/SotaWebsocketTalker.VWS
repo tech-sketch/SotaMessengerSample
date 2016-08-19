@@ -351,11 +351,7 @@
 			</tpList>
 		</Pose>
 	</iniPoses>
-	<jarPath>
-		<jarReference>
-			<classPath>C:\Users\STC-intern-2\SotaMessengerSample\lib\tyrus-standalone-client-1.13.jar</classPath>
-		</jarReference>
-	</jarPath>
+	<jarPath />
 	<package>
 		<javaPackage>
 			<javaClass xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
