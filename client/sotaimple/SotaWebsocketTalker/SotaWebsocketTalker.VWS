@@ -33,6 +33,34 @@
 			<parentPb i:nil="true" />
 			<type>boolean</type>
 		</MemberValueObject>
+		<MemberValueObject>
+			<initialize></initialize>
+			<memberVariableLine>0</memberVariableLine>
+			<name>recvReturnValue</name>
+			<parentPb i:nil="true" />
+			<type>Object</type>
+		</MemberValueObject>
+		<MemberValueObject>
+			<initialize>new SpeechRecog(motion)</initialize>
+			<memberVariableLine>0</memberVariableLine>
+			<name>recog</name>
+			<parentPb i:nil="true" />
+			<type>SpeechRecog</type>
+		</MemberValueObject>
+		<MemberValueObject>
+			<initialize>new MotionAsSotaWish(motion)</initialize>
+			<memberVariableLine>0</memberVariableLine>
+			<name>sotawish</name>
+			<parentPb i:nil="true" />
+			<type>MotionAsSotaWish</type>
+		</MemberValueObject>
+		<MemberValueObject>
+			<initialize i:nil="true" />
+			<memberVariableLine>0</memberVariableLine>
+			<name>abortresult</name>
+			<parentPb i:nil="true" />
+			<type>RecogResult</type>
+		</MemberValueObject>
 	</_globalVariables>
 	<_import xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
 		<d2p1:string>jp.vstone.RobotLib.*</d2p1:string>
@@ -48,7 +76,6 @@
 	<appPropaty>
 		<_AppTitle>SotaWebsocketTalker</_AppTitle>
 		<_ApplicationType>App</_ApplicationType>
-		<_ExecOption></_ExecOption>
 		<_StartSoundFile></_StartSoundFile>
 		<_Trigger>Button</_Trigger>
 		<_TriggerOperation></_TriggerOperation>
@@ -56,7 +83,7 @@
 		<jarFileName>SotaWebsocketTalker.jar</jarFileName>
 	</appPropaty>
 	<defaultInipos>0</defaultInipos>
-	<defaultRobotUsers>0</defaultRobotUsers>
+	<defaultRobotUsers>1</defaultRobotUsers>
 	<iniPoses>
 		<Pose>
 			<category i:nil="true" />
@@ -326,7 +353,7 @@
 	</iniPoses>
 	<jarPath>
 		<jarReference>
-			<classPath>C:\Users\tie300657\Downloads\tyrus-standalone-client-1.13.jar</classPath>
+			<classPath>C:\Users\STC-intern-2\SotaMessengerSample\lib\tyrus-standalone-client-1.13.jar</classPath>
 		</jarReference>
 	</jarPath>
 	<package>
@@ -3510,7 +3537,7 @@
 				</uintID>
 			</MotSend>
 			<debugPort>8765</debugPort>
-			<host>192.168.0.0</host>
+			<host>192.168.11.13</host>
 			<password>raspberry</password>
 			<platform>RaspberryPi</platform>
 			<rootPath>/home/pi/</rootPath>
